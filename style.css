@@ -1,0 +1,142 @@
+/* VARIABLES SOLO DE COLORES */
+:root {
+  --orange: #F97316;
+  --white: #FFFFFF;
+  --gray-dark: #374151;
+  --black: #000000;
+}
+
+/* BASE */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--white);
+  color: var(--black);
+  padding-top: 70px; /* deja hueco porque el header es fijo */
+}
+
+/* HEADER */
+.site-header {
+  position: fixed;   /* siempre arriba */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: var(--white);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+/* Contenedor que servirá de referencia */
+.container {
+  position: relative;
+  height: 100%;
+}
+
+/* LOGO IZQUIERDA */
+.logo {
+  position: absolute;
+  left: 20px;   /* pegado al borde izquierdo */
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.logo-box {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 8px;
+  margin-right: 10px;
+  background: var(--white);
+}
+
+.logo-bar {
+  width: 6px;
+  height: 20px;
+  background: var(--orange);
+  border-radius: 2px;
+}
+
+.brand .name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.brand .tag {
+  font-size: 12px;
+  color: gray;
+}
+
+/* NAV CENTRADA */
+.nav-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;  /* mismo espacio entre enlaces */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: var(--gray-dark);
+}
+
+/* ACTIONS DERECHA */
+.actions {
+  position: absolute;
+  right: 20px;  /* pegado al borde derecho */
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+/* Botón con borde negro */
+.btn-ghost {
+  background: transparent;
+  border: 1px solid rgba(0,0,0,0.2);
+  color: var(--black);
+}
+
+.btn-ghost:hover {
+  background: var(--gray-dark);
+  color: var(--white);
+}
+
+/* Botón CTA naranja */
+.btn-cta {
+  background: var(--orange);
+  color: var(--white);
+  border: none;
+}
+
+.btn-cta:hover {
+  opacity: 0.9;
+}
