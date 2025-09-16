@@ -1,0 +1,139 @@
+:root {
+  --orange: #F97316;
+  --white: #FFFFFF;
+  --gray-dark: #374151;
+  --black: #000000;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f9fafb, #e5e7eb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Caja del login */
+.login-container {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 40px;
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+}
+
+/* Logo arriba */
+.logo-box {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 12px;
+  margin: 0 auto 12px auto; /* centrado y margen inferior */
+}
+
+.logo-bar {
+  width: 8px;
+  height: 28px;
+  background: var(--orange);
+  border-radius: 3px;
+}
+
+/* Nombre */
+.brand {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+  color: var(--black);
+}
+
+/* Eslogan */
+.slogan {
+  font-size: 14px;
+  color: var(--gray-dark);
+  margin: 8px 0 30px 0; /* espacio grande debajo */
+}
+
+/* Formulario */
+.input-group {
+  text-align: left;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+label {
+  font-size: 14px;
+  color: var(--gray-dark);
+  display: block;
+  margin-bottom: 6px;
+}
+
+input {
+  width: 100%;
+  height: 38px;
+  padding: 6px 10px 6px 34px; /* espacio para el emoji */
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: var(--orange);
+  box-shadow: 0 0 3px rgba(249,115,22,0.4);
+}
+
+/* Iconos en los inputs */
+.input-group i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-20%);
+  color: var(--gray-dark);
+  font-size: 14px;
+}
+
+/* Emoji en el email */
+.input-group.email::before {
+  content: "📧";
+  position: absolute;
+  left: 10px;
+  top: 30px;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+/* Emoji en la contraseña */
+.input-group.password::before {
+  content: "🔑";
+  position: absolute;
+  left: 10px;
+  top: 30px;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+/* Botón de acceder */
+.btn-cta {
+  width: 100%;
+  padding: 12px;
+  background: var(--orange);
+  border: none;
+  border-radius: 8px;
+  color: var(--white);
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-cta:hover {
+  background: #ea580c;
+}

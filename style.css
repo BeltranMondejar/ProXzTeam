@@ -36,7 +36,7 @@ body {
 /* LOGO IZQUIERDA */
 .logo {
   position: absolute;
-  left: 20px;   /* pegado al borde izquierdo */
+  left: 30px;   /* pegado al borde izquierdo */
   top: 50%;
   transform: translateY(-50%);
   display: flex;
@@ -103,7 +103,7 @@ body {
 /* ACTIONS DERECHA */
 .actions {
   position: absolute;
-  right: 20px;  /* pegado al borde derecho */
+  right: 75px;  /* pegado al borde derecho */
   top: 50%;
   transform: translateY(-50%);
   display: flex;
