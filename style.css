@@ -58,9 +58,9 @@ body {
 }
 
 .logo-bar {
-  width: 6px;
-  height: 20px;
-  background: var(--orange);
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
   border-radius: 2px;
 }
 
